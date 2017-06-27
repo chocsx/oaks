@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>oaks site</title>
+    <title>Oak's Burritos</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -17,7 +17,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -26,50 +26,200 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">oaks site</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+    <header class="topo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <img src="images/Logo.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-lg-10">
+            <nav>
+              <ul>
+                <li><a href="#">oaks</a></li>
+                <li><a href="#">cardápio</a></li>
+                <li><a href="#">unidades</a></li>
+                <li><a href="#">a gente te entrega</a></li>
+                <li><a href="#">invista</a></li>
+                <li><a href="#">contato</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
+    </header>
+    <main>
+      <div class="slider">
+        <div>
+          <img src="images/BannerEditadoF.png"  alt="">
+        </div>
+      </div>
+    </main>
+    <section class="unidades">
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="images/Poa.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-lg-6">
+              <div class="unidades__endereco">
+                <h2>Porto Alegre</h2>
+                <h3>Todos os dias - das 11h30 às 23h</h3>
+                <ul>
+                  <li>
+                    <div class="unidade__endereco__icon">
+                        <img src="images/Pin.png" height="20" width="20" alt="">
+                    </div>
+                    <h4> Rua Félix da Cunha, 1215 Porto Alegre - RS </h4>
+                  </li>
+                  <li>
+                    <div class="unidade__endereco__icon">
+                        <img src="images/Phone.png" height="20" width="20" alt="">
+                    </div>
+                    <h4> 51. 3095-0121    </h4>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="btn">VEJA COMO CHEGAR</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="images/Rio.png" alt="" class="img-responsive">
+            </div>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+            <div class="col-lg-6">
+              <div class="unidades__endereco">
+                <h2>Rio de Janeiro</h2>
+                <h3>Todos os dias - das 11h30 às 23h</h3>
+                <ul>
+                  <li>
+                    <div class="unidade__endereco__icon">
+                        <img src="images/Pin.png" height="20" width="20" alt="">
+                    </div>
+                    <h4> Rua Félix da Cunha, 1215 Porto Alegre - RS </h4>
+                  </li>
+                  <li>
+                    <div class="unidade__endereco__icon">
+                        <img src="images/Phone.png" height="20" width="20" alt="">
+                    </div>
+                    <h4>11. 3095-0121 </h4>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="btn">VEJA COMO CHEGAR</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="cardapio">
+      <div class="container">
+        <h2><span>os melhores produtos</span> selecionados</h2>
+        <ul class="cardapio__lista">
+          <li class="cardapio__item">
+            <div class="cardapio__item_imagem">
+              <img src="images/Burrito.png" alt="">
+            </div>
+            <h3>nachos</h3>
+            <p>
+              Tortilla de trigo integral ou normal
+              recheada com carne ou vegetais e os
+              complementos à sua escolha.
+            </p>
+          </li>
+          <li class="cardapio__item">
+            <div class="cardapio__item_imagem">
+              <img src="images/Nachos.png" alt="">
+            </div>
+            <h3>nachos</h3>
+            <p>
+              Tortillas de milho crocantes em formato
+              triangular. Na porção pequena ou média,
+              escolha os molhos de sua preferência.
+            </p>
+          </li>
+          <li class="cardapio__item">
+            <div class="cardapio__item_imagem">
+              <img src="images/Tacos.png" alt="">
+            </div>
+            <h3>nachos</h3>
+            <p>
+              Tortilla crispy (milho), soft (trigo) ou trigo
+              integral recheada com carne ou vegetais
+              e complementos à sua escolha.
+            </p>
+          </li>
+          <li class="cardapio__item">
+            <div class="cardapio__item_imagem">
+              <img src="images/Oak.png" alt="">
+            </div>
+            <h3>nachos</h3>
+            <p>
+              Nossa opção de refeição servida no
+              prato à base de arroz e frijoles com carnes
+              e molhos de sua preferência.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="novidades">
+      <div class="container">
+        <div class="novidades__box">
+            <h2>Mini Burritos & Nachos</h2>
+            <p>
+              pra Galera que faz coquetéis,
+              palestras, coffee break, um combo
+              de mini burritos e nachos.
+            </p>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <img src="images/Logo.png"  alt="">
+          </div>
+          <div class="col-lg-4">
+            <p>
+              O Oak’s Burritos foi criado por três amigos de
+              Porto Alegre em 2009. Na época, tinham 21
+              anos e eram estudantes de administração
+              recém-chegados de seus intercâmbios na
+              Austrália e Estados Unidos.
+            </p>
+          </div>
+          <div class="col-lg-2">
+            <a href="javascript:void(0)" class="btn">Trabalhe Conosco</a>
+          </div>
+          <div class="col-lg-3">
+            <img src="images/wifi.png" alt="">
+            <p>
+              Faça check-in e conte para
+              seus amigos sobre o Oak’s
+            </p>
+          </div>
+          <div class="col-lg-1">
+            <ul>
+              <li><a href="#"><img src="images/facebook.png" height="30" width="30" alt=""></a></li>
+              <li><a href="#"><img src="images/instagram.png" height="30" width="30" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -87,21 +237,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
-    <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
