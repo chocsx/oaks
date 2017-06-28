@@ -18,23 +18,25 @@ $hamburger-padding-y: 25px;
     src: url(../fonts/KGLifeisMessy.ttf);
 }
 
-
-
 /* Space out content a bit */
 body {
   background-color: #f3f3f3;
   font-family: $font-text;
   font-size: 13px;
 }
-.topo{
+.home .topo{
   position: fixed;
+}
+.topo{
+  position: absolute;
+  flex-wrap: wrap;
   left: 0;
   right: 0;
-  flex-wrap: wrap;
+  z-index: 10;
   margin: 0 auto;
   display: flex;
   padding: 10px 0;
-  z-index: 10;
+  background-color: $preto-opacity;
   nav{
     ul{
       margin: 0;
@@ -83,18 +85,25 @@ body {
   }
 }
 
+.home main .slider .slide{
+  height: 650px;
+  background-position: center;
+  @media screen and (max-width: 480px){
+    height: 480px;
+  }
+}
 main{
   .slider{
     .slide{
       background-attachment: fixed;
-      background-position: center;
+      background-position: 50% 100%;
       background-repeat: no-repeat;
       background-size: cover;
       background-color: $preto-opacity;
       background-blend-mode: multiply;
-      height: 650px;
+      height: 450px;
       @media screen and (max-width: 480px){
-        height: 480px;
+        height: 350px;
       }
     }
   }
@@ -189,10 +198,13 @@ main{
   }
   &__item{
     flex: 1 1 50%;
+    margin-bottom: 35px;
     @media screen and (max-width: 768px){
       flex: 1 1 100%;
     }
-    margin-bottom: 35px;
+    a{
+      text-decoration: none;
+    }
     &_imagem img{
       max-width: 100%;
       display: block;
@@ -295,5 +307,16 @@ footer{
         flex: 1 1 auto;
       }
     }
+  }
+}
+section.content{
+  padding: 60px 0 100px;
+  h2{
+    color: #333;
+    font-family: KG Life,cursive;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }

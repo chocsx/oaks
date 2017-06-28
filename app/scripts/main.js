@@ -14,17 +14,17 @@ $(document).ready(function(){
     autoplaySpeed: 3000,
     mobileFirst: true
   });
-  $(window).on("resize scroll load", function() {
+  $(window).on('resize scroll load', function() {
     var e = $(window).scrollTop();
 
     if(e > 0){
-      $('.topo').css({
-        "background-color":"rgba(7,7,7,.5)",
-        "color": "#FFF"
+      $('.home .topo').css({
+        'background-color':'rgba(7,7,7,.5)',
+        'color': '#FFF'
       })
     }else{
-      $('.topo').css({
-        "background-color":"transparent",
+      $('.home .topo').css({
+        'background-color':'transparent',
       })
     }
 
